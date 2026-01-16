@@ -22,7 +22,8 @@
 
 .banner-description,
 .feature-description,
-.sponsors-description {
+.sponsors-description,
+.features-description {
   margin-bottom: 32px;
 }
 .display-flex {
@@ -133,6 +134,52 @@ main > section {
   color: #ff900e;
 }
 
+/* feature section related styles */
+.features {
+  gap: 140px;
+}
+
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding: 21px;
+}
+
+.features-description {
+  max-width: 586px;
+}
+
+.feature-card {
+  max-width: 514px;
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#experience-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -120px;
+}
+
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.featured-architect img {
+  width: 100%;
+}
+
 /* some-facts related styles */
 .facts-description {
   max-width: 542px;
@@ -184,11 +231,23 @@ main > section {
   filter: grayscale(100%);
 }
 
+/* footer related styles */
+.footer-bg {
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+.footer-description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 39px 410px;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar,
   /* .nav-links, */
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .nav-links {
@@ -198,6 +257,11 @@ main > section {
   .facts-container,
   .sponsor-companies {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 60px;
   }
 
   .facts-container {
@@ -215,10 +279,27 @@ main > section {
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .our-features {
     margin: 50px auto;
+  }
+
+  .sponsor-companies {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 230px;
   }
 }

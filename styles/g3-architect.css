@@ -9,7 +9,7 @@
 
 /* shared styles */
 .h3 {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: bold;
   color: #131313;
 }
@@ -28,6 +28,16 @@
 
 .bg-color {
   background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary {
+  background-color: #ff900e;
+  color: #ffffff;
+  padding: 21px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 /* header styles */
@@ -51,4 +61,29 @@
 .banner {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+/* banner related styles */
+.banner-content {
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+  }
 }
